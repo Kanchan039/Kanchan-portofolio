@@ -1,17 +1,18 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
+    background: #f0f2f5;
     color: #333;
 }
 
 header {
-    background: #004080;
+    background: #003366;
     color: white;
-    padding: 1rem 0;
+    padding: 1.5rem 0;
     text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
@@ -19,32 +20,50 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
-    margin-top: 0.5rem;
+    gap: 2rem;
+    margin-top: 0.75rem;
 }
 
 nav a {
-    color: white;
+    color: #ffdd57;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffffff;
 }
 
 main {
     padding: 2rem;
-    max-width: 800px;
-    margin: auto;
+    max-width: 900px;
+    margin: 2rem auto;
     background: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 footer {
     text-align: center;
     padding: 1rem;
-    background: #004080;
-    color: white;
-    /* Removed fixed positioning to avoid overlap */
+    background: #003366;
+    color: #f0f0f0;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    border-top: 3px solid #ffdd57;
 }
 
 h1, h2 {
+    color: #003366;
+}
+
+ul li::marker {
     color: #004080;
+}
+
+section h2 {
+    border-bottom: 2px solid #004080;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
